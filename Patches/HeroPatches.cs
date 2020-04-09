@@ -16,11 +16,6 @@ namespace BannerlordTweaks.Patches
             float mult = 0.03f;
 
             return 1 + mult * Math.Pow(skillLevel * skillMul, pow);
-
-            if (Settings.Instance.HeroSkillExperienceGeneralMultiplier >= 1)
-                return Settings.Instance.HeroSkillExperienceGeneralMultiplier;
-            else
-                return Math.Max(1, 0.0315769 * Math.Pow(skillLevel, 1.020743));
         }
 
         static bool Prefix(Hero __instance, SkillObject skill, int xpAmount)
