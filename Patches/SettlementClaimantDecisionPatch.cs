@@ -243,12 +243,11 @@ namespace BannerlordTweaks.Patches
 
             sumSettlementValue = (float)Math.Pow(sumSettlementValue, 0.77);
 
-            float influenceValue = clan.Influence > 1.0f ? (float)Math.Pow(clan.Influence, 0.5) : -10.0f;
+            //float influenceValue = clan.Influence > 1.0f ? (float)Math.Pow(clan.Influence, 0.5) : -10.0f;
 
             float num14 = (float)(
                 (
                 clan.Tier * 20.0 
-                + influenceValue / 5.0
                 + partiesStrengthValue
                 + commandersInClanVal 
                 + noblesInClanVal 

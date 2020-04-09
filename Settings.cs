@@ -361,7 +361,7 @@ namespace BannerlordTweaks
         [XmlElement]
         [SettingProperty("Siege Collateral Damage Casualties", 1, 3, "Native value is 2.0. Changes the value used to calculate collateral casualties during the campaign map siege stage.")]
         [SettingPropertyGroup("Siege Casualties Tweaks")]
-        public int SiegeCollateralDamageCasualties { get; set; } = 1;
+        public float SiegeCollateralDamageCasualties { get; set; } = 1;
         [XmlElement]
         [SettingProperty("Siege Destruction Casualties", 3, 7, "Native value is 5.0. Changes the value used to calculate desctruction casualties during the campaign map siege stage.")]
         [SettingPropertyGroup("Siege Casualties Tweaks")]
